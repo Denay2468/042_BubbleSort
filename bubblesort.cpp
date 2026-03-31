@@ -30,6 +30,34 @@ void input(){
 
 }
 void bubblesortArray(){
+    int pass = 1;
+
+    do
+    {
+        for (int j = 0; j <= n - 1 - pass; j++)
+        {
+            
+            if (arr[j] > arr[j + 1])
+            {
+                
+                int temp;
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+
+        pass += 1; 
+
+        
+        cout << "Pass " << pass - 1 << ": "; 
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " ";
+        }
+        cout << endl;
+
+    } while (pass <= n - 1);
 
 }
 void display(){

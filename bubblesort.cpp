@@ -75,6 +75,11 @@ void display(){
             cout << "-->";
         }
     }
+    cout << endl;
+    cout << endl;
+    cout << "Number of passes = " << n - 1 << endl; 
+    cout << endl;
+    cout << endl;
     
 
 }
